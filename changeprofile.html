@@ -18,7 +18,8 @@
   <meta name="theme-color" content="#000">
   <meta name="msapplication-navbutton-color" content="#000">
   <meta name="apple-mobile-web-app-status-bar-style" content="#000">
-  <title>instinto</title>
+  <title>Личный кабинет</title>
+  <meta name="description" content="">
   <link rel="stylesheet" href="css/style.css">
   <script>
 // Браузер и ОС
@@ -197,6 +198,65 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
     </div>
   </header>
+  <div class="content">
+    <div class="content__container">
+      <ul class="breadcrumbs" aria-label="Breadcrumb" role="navigation">
+        <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+        <li class="breadcrumbs__item"><a href="profile.html">Личный кабинет</a></li>
+        <li class="breadcrumbs__item"><span>Ваши данные</span></li>
+      </ul>
+      <main class="content__main">
+        <div class="content__inner">
+          <div class="content-block  content-block--full-width">
+            <div class="content-block__inner">
+              <div class="content-block__text-wrapper">
+                <h2>Ваши данные</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content__inner">
+          <div class="content-block  content-block--full-width">
+            <div class="content-block__inner">
+              <div class="content-block__text-wrapper">
+                <div class="categories-list">
+                  <ul class="categories-list__wrap">
+                    <li><a href="profile.html">Кабинет</a></li>
+                    <li><a href="changeprofile.html">Мои данные</a></li>
+                    <li><a href="#">Мои заказы</a></li>
+                    <li><a href="#">Желаемое <span>(8)</span></a></li>
+                    <li><a href="#">Подарочный сертификат</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="form  form--personal-data">
+          <div class="content__inner">
+            <div class="content-wrap">
+              <div class="content-block">
+                <div class="content-block__inner">
+                  <div class="profile-card__description">
+                    <p>ФИО</p><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="Фамилия Имя Отчество"/></span></label>
+                  </div>
+                  <div class="profile-card__description">
+                    <p>Мобильный телефон (для статуса заказа)</p><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="К примеру: +7 (000) 000-00-00"/></span></label>
+                  </div>
+                  <div class="profile-card__description">
+                    <p>Ваша электронная почта</p><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="neyxsem@gmail.com"/></span></label>
+                  </div>
+                  <div class="profile-card__description">
+                    <p>Новый пароль</p><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="Придумайте пароль"/></span></label><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="Повторите новый пароль"/></span></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </main>
+    </div>
+  </div>
   <footer class="page-footer" role="contentinfo">
     <div class="content__container">
       <div class="page-footer__inner page-footer__inner--carusel">

@@ -18,7 +18,8 @@
   <meta name="theme-color" content="#000">
   <meta name="msapplication-navbutton-color" content="#000">
   <meta name="apple-mobile-web-app-status-bar-style" content="#000">
-  <title>instinto</title>
+  <title>Личный кабинет</title>
+  <meta name="description" content="">
   <link rel="stylesheet" href="css/style.css">
   <script>
 // Браузер и ОС
@@ -197,6 +198,136 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
     </div>
   </header>
+  <div class="content">
+    <div class="content__container">
+      <ul class="breadcrumbs" aria-label="Breadcrumb" role="navigation">
+        <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+        <li class="breadcrumbs__item"><span>Личный кабинет</span></li>
+      </ul>
+      <main class="content__main">
+        <div class="content__inner">
+          <div class="content-block  content-block--full-width">
+            <div class="content-block__inner">
+              <div class="content-block__text-wrapper">
+                <h2>Личный кабинет</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content__inner">
+          <div class="content-block  content-block--full-width">
+            <div class="content-block__inner">
+              <div class="content-block__text-wrapper">
+                <div class="categories-list">
+                  <ul class="categories-list__wrap">
+                    <li><a href="profile.html">Кабинет</a></li>
+                    <li><a href="changeprofile.html">Мои данные</a></li>
+                    <li><a href="#">Мои заказы</a></li>
+                    <li><a href="#">Желаемое <span>(8)</span></a></li>
+                    <li><a href="#">Подарочный сертификат</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content__inner">
+          <div class="content-wrap">
+            <div class="content-block">
+              <div class="content-block__inner">
+                <div class="profile-card">
+                  <div class="profile-card__body"><svg>
+                      <use xlink:href="img/sprite.svg#icon-basket"></use>
+                    </svg>
+                    <div class="profile-card__title">Заказы</div>
+                    <div class="profile-card__description">Следите за статусом заказов и возвращайте непонравившиеся изделия</div>
+                  </div><a class="btn  btn--white" href="#">Смотреть заказы</a>
+                </div>
+              </div>
+            </div>
+            <div class="content-block">
+              <div class="content-block__inner">
+                <div class="profile-card">
+                  <div class="profile-card__body"><svg>
+                      <use xlink:href="img/sprite.svg#icon-favorites"></use>
+                    </svg>
+                    <div class="profile-card__title">Желания (8 товаров)</div>
+                    <div class="profile-card__description">Сохраняйте понравившиеся Вам товары и проверяйте их наличие</div>
+                  </div><a class="btn  btn--white" href="#">Показать желания</a>
+                </div>
+              </div>
+            </div>
+            <div class="content-block">
+              <div class="content-block__inner">
+                <div class="profile-card">
+                  <div class="profile-card__body"><svg>
+                      <use xlink:href="img/sprite.svg#icon-gift-grayscale"></use>
+                    </svg>
+                    <div class="profile-card__title">Подарочный сертификат</div>
+                    <div class="profile-card__description">У вас есть подарочная карта? Активируйте ее здесь и получите указанный в коде бонус</div>
+                  </div><a class="btn  btn--white" href="#">Активировать подарок</a>
+                </div>
+              </div>
+            </div>
+            <div class="content-block">
+              <div class="content-block__inner">
+                <div class="profile-card">
+                  <div class="profile-card__body"><svg>
+                      <use xlink:href="img/sprite.svg#icon-smile"></use>
+                    </svg>
+                    <div class="profile-card__title">Нужна помощь?</div>
+                    <div class="profile-card__description">Если у вас возникли вопросы, вы всегда можете связаться с нами</div>
+                  </div><a class="btn  btn--white" href="#">Написать в поддержку</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-wrap content-wrap--secondary content-wrap--gray">
+            <div class="content-block  content-block--large">
+              <div class="content-block__inner">
+                <div class="profile-card__title">Ваши данные</div>
+              </div>
+            </div>
+            <div class="content-block">
+              <div class="content-block__inner">
+                <div class="profile-card__description">
+                  <p>ФИО: <span>Абдулаев Тимур Мурадович</span></p>
+                  <p>E-mail: <span>webdtim@gmail.com</span></p>
+                  <p>Мобильный: <span>+7 989 474-43-84</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="content-block">
+              <div class="content-block__inner">
+                <div class="profile-card__description">
+                  <p>пол: <span>Мужской</span></p>
+                  <p>Дата рождения: <span>06.09.1995</span></p>
+                  <p>Пароль:<a href="changeprofile.html"> изменить</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="content-block  content-block--large">
+              <div class="content-block__inner">
+                <div class="profile-card__title">Ваши адреса</div>
+                <div class="profile-card__description">Добавьте сюда свои адреса, чтобы не вводить их заного при оформлении заказа</div>
+              </div>
+            </div>
+            <div class="content-block  content-block--large">
+              <div class="content-block__inner">
+                <div class="profile-card__description"><span>Абдулаев Тимур Мурадович</span>
+                  <p>микрорайон 4, приморский жилой район, 374935, Махачкала (Дагестан), кв 39</p>
+                  <p>+7 988 302-92-92</p>
+                </div>
+              </div>
+            </div>
+            <div class="content-block">
+              <div class="content-block__inner"><a class="btn  btn--white" href="changeprofile.html">Редактировать</a></div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
   <footer class="page-footer" role="contentinfo">
     <div class="content__container">
       <div class="page-footer__inner page-footer__inner--carusel">
