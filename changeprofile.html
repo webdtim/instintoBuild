@@ -222,7 +222,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div class="categories-list">
                   <ul class="categories-list__wrap">
                     <li><a href="profile.html">Кабинет</a></li>
-                    <li><a href="changeprofile.html">Мои данные</a></li>
+                    <li><a class="categories-list__active" href="changeprofile.html">Мои данные</a></li>
                     <li><a href="#">Мои заказы</a></li>
                     <li><a href="#">Желаемое <span>(8)</span></a></li>
                     <li><a href="#">Подарочный сертификат</a></li>
@@ -235,7 +235,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <form class="form  form--personal-data">
           <div class="content__inner">
             <div class="content-wrap">
-              <div class="content-block">
+              <div class="content-block  content-block--p-mob">
                 <div class="content-block__inner">
                   <div class="profile-card__description">
                     <p>ФИО</p><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="Фамилия Имя Отчество"/></span></label>
@@ -243,6 +243,36 @@ document.addEventListener("DOMContentLoaded", () => {
                   <div class="profile-card__description">
                     <p>Мобильный телефон (для статуса заказа)</p><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="К примеру: +7 (000) 000-00-00"/></span></label>
                   </div>
+                </div>
+              </div>
+              <div class="content-block  content-block--p-mob">
+                <div class="content-block__inner">
+                  <div class="profile-card__description">
+                    <p>Дата рождения</p>
+                    <div class="profile-card__select-wrapper">
+                      <div class="select  select--profile" name="day" id="day"><select>
+                          <option value="01" selected>01</option>
+                          <option value="02">02</option>
+                          <option value="03">03</option>
+                          <option value="04">04</option>
+                        </select></div>
+                      <div class="select  select--profile" name="month" id="month"><select>
+                          <option value="1" selected>Сентябрь</option>
+                          <option value="1" selected>Октябрь</option>
+                          <option value="1" selected>Ноябрь</option>
+                        </select></div>
+                      <div class="select  select--profile" name="year" id="year"><select>
+                          <option value="1" selected>1997</option>
+                          <option value="2">2001</option>
+                          <option value="3">2002</option>
+                          <option value="4">2003</option>
+                        </select></div>
+                    </div><span>Получайте поздравления и дополнительные скидки от Instinto</span>
+                  </div>
+                </div>
+              </div>
+              <div class="content-block  content-block--p-mob">
+                <div class="content-block__inner">
                   <div class="profile-card__description">
                     <p>Ваша электронная почта</p><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="neyxsem@gmail.com"/></span></label>
                   </div>
@@ -251,6 +281,37 @@ document.addEventListener("DOMContentLoaded", () => {
                   </div>
                 </div>
               </div>
+              <div class="content-block  content-block--p-mob">
+                <div class="content-block__inner">
+                  <div class="profile-card__description">
+                    <p>Пол</p><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="К примеру: +7 (000) 000-00-00"/></span></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content-block  content-block--p-mob">
+              <div class="content-block__inner">
+                <div class="your-adress">
+                  <h3>Ваш адрес</h3>
+                  <div class="profile-card__description">
+                    <p>Улица</p><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="Название улицы"/></span></label>
+                  </div>
+                  <div class="profile-card__description">
+                    <p>Дом</p><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="Номер дома"/></span></label>
+                  </div>
+                  <div class="profile-card__description">
+                    <p>Квартира</p><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="Номер квартиры"/></span></label>
+                  </div>
+                  <div class="profile-card__description">
+                    <p>Почтовый индекс</p><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="Номер"/></span></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content__inner">
+            <div class="content-block  content-block--p-mob">
+              <div class="content-block__inner"><button class="btn  btn--accent">Применить изменения</button></div>
             </div>
           </div>
         </form>
@@ -262,7 +323,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="page-footer__inner page-footer__inner--carusel">
         <div class="content-block  content-block--large">
           <div class="content-block__inner">
-            <div class="content-block__wrap-mob"><a><img src="img/Rectangle 99.png"></a></div>
+            <div class="content-block__wrap-mob"><a><img src="img/Rectangle 99.png" alt="discount"></a></div>
           </div>
         </div>
         <div class="content-block  content-block--large">
