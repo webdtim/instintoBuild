@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <div class="search__inner"><svg class="search__icon">
                   <use xlink:href="img/sprite.svg#icon-search"></use>
                 </svg></div>
-            </a><a class="header-icons__inner" href="profile.html">
+            </a><a class="header-icons__inner" data-toggle="modal" data-target="#modal-sign-up" href="#">
               <div class="header-icons__text-sub-icon">Профиль</div><svg class="header-icons__icon header-icons__icon--hide" width="20" height="20">
                 <use xlink:href="img/sprite.svg#icon-person"></use>
               </svg>
@@ -107,29 +107,31 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
           <div class="search-panel-dropdown">
             <div class="search-panel-dropdown__inner">
-              <div class="search-panel-dropdown__body">
-                <div class="search-panel-dropdown-item">
-                  <div class="search-panel-dropdown-item__image"><img src="img/img1.png" alt="альт" /></div>
-                  <div class="search-panel-dropdown-item__text">
-                    <div class="search-panel-dropdown-item__title">Комплект белья obsessive</div>
-                    <div class="search-panel-dropdown-item__price">4 943 ₽</div>
+              <div class="search-panel-dropdown__body"><a href="#">
+                  <div class="search-panel-dropdown-item">
+                    <div class="search-panel-dropdown-item__image"><img src="img/img1.png" alt="альт" /></div>
+                    <div class="search-panel-dropdown-item__text">
+                      <div class="search-panel-dropdown-item__title">Комплект белья obsessive</div>
+                      <div class="search-panel-dropdown-item__price">4 943 ₽</div>
+                    </div>
                   </div>
-                </div>
-                <div class="search-panel-dropdown-item">
-                  <div class="search-panel-dropdown-item__image"><img src="img/img1.png" alt="альт" /></div>
-                  <div class="search-panel-dropdown-item__text">
-                    <div class="search-panel-dropdown-item__title">Комплект белья obsessive</div>
-                    <div class="search-panel-dropdown-item__price">4 943 ₽</div>
+                </a><a href="#">
+                  <div class="search-panel-dropdown-item">
+                    <div class="search-panel-dropdown-item__image"><img src="img/img1.png" alt="альт" /></div>
+                    <div class="search-panel-dropdown-item__text">
+                      <div class="search-panel-dropdown-item__title">Комплект белья obsessive</div>
+                      <div class="search-panel-dropdown-item__price">4 943 ₽</div>
+                    </div>
                   </div>
-                </div>
-                <div class="search-panel-dropdown-item">
-                  <div class="search-panel-dropdown-item__image"><img src="img/img1.png" alt="альт" /></div>
-                  <div class="search-panel-dropdown-item__text">
-                    <div class="search-panel-dropdown-item__title">Комплект белья obsessive</div>
-                    <div class="search-panel-dropdown-item__price">4 943 ₽</div>
+                </a><a href="#">
+                  <div class="search-panel-dropdown-item">
+                    <div class="search-panel-dropdown-item__image"><img src="img/img1.png" alt="альт" /></div>
+                    <div class="search-panel-dropdown-item__text">
+                      <div class="search-panel-dropdown-item__title">Комплект белья obsessive</div>
+                      <div class="search-panel-dropdown-item__price">4 943 ₽</div>
+                    </div>
                   </div>
-                </div>
-              </div>
+                </a></div>
               <div class="search-panel-dropdown__footer">
                 <div class="search-panel-dropdown__footer-text">Всего <b>182</b> результата</div><a class="search-panel-dropdown__footer-link" href="#">Смотреть все</a><svg>
                   <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
@@ -308,12 +310,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
             <div class="content-block  content-block--large">
               <div class="content-block__inner">
-                <div class="profile-card__title">Ваши адреса</div>
-                <div class="profile-card__description">Добавьте сюда свои адреса, чтобы не вводить их заного при оформлении заказа</div>
-              </div>
-            </div>
-            <div class="content-block  content-block--large">
-              <div class="content-block__inner">
+                <div class="profile-card__title">Ваш адрес</div>
                 <div class="profile-card__description">
                   <h5>Абдулаев Тимур Мурадович</h5>
                   <p>микрорайон 4, приморский жилой район, 374935, Махачкала (Дагестан), кв 39</p>
@@ -483,6 +480,246 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
     </div>
   </footer>
+  <div class="modals">
+    <div class="modal" id="modal-size-table-anais" tabindex="-1" role="dialog">
+      <div class="modal__dialog" role="document">
+        <div class="modal__content">
+          <div class="modal__header"><span class="close modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></span>
+            <div class="modal__title">Anais</div>
+          </div>
+          <div class="modal__body modal__body--table">
+            <h5>Соответсвие размеров чаши</h5>
+            <div class="modal__table-container">
+              <table>
+                <tr>
+                  <th>Под грудью</th>
+                  <th>Размер</th>
+                  <th class="modal__th">Чаша <br> A</th>
+                  <th>Чаша <br> B</th>
+                  <th>Чаша <br> C</th>
+                  <th>Чаша <br> D</th>
+                  <th>Чаша <br> E</th>
+                  <th>Чаша <br> F</th>
+                  <th>Чаша <br> G</th>
+                  <th>Чаша <br> H</th>
+                  <th>Чаша <br> I</th>
+                  <th>Чаша <br> J</th>
+                  <th>Чаша <br> K</th>
+                </tr>
+                <tr>
+                  <td>63-67</td>
+                  <td>65</td>
+                  <td>77-79</td>
+                  <td>79-81</td>
+                  <td>81-83</td>
+                  <td>83-85</td>
+                  <td>85-87</td>
+                  <td>87-89</td>
+                  <td>89-91</td>
+                  <td>91-93</td>
+                  <td>93-95</td>
+                  <td>95-97</td>
+                  <td>97-99</td>
+                </tr>
+                <tr>
+                  <td>63-67</td>
+                  <td>65</td>
+                  <td>77-79</td>
+                  <td>79-81</td>
+                  <td>81-83</td>
+                  <td>83-85</td>
+                  <td>85-87</td>
+                  <td>87-89</td>
+                  <td>89-91</td>
+                  <td>91-93</td>
+                  <td>93-95</td>
+                  <td>95-97</td>
+                  <td>97-99</td>
+                </tr>
+                <tr>
+                  <td>63-67</td>
+                  <td>65</td>
+                  <td>77-79</td>
+                  <td>79-81</td>
+                  <td>81-83</td>
+                  <td>83-85</td>
+                  <td>85-87</td>
+                  <td>87-89</td>
+                  <td>89-91</td>
+                  <td>91-93</td>
+                  <td>93-95</td>
+                  <td>95-97</td>
+                  <td>97-99</td>
+                </tr>
+                <tr>
+                  <td>63-67</td>
+                  <td>65</td>
+                  <td>77-79</td>
+                  <td>79-81</td>
+                  <td>81-83</td>
+                  <td>83-85</td>
+                  <td>85-87</td>
+                  <td>87-89</td>
+                  <td>89-91</td>
+                  <td>91-93</td>
+                  <td>93-95</td>
+                  <td>95-97</td>
+                  <td>97-99</td>
+                </tr>
+                <tr>
+                  <td>63-67</td>
+                  <td>65</td>
+                  <td>77-79</td>
+                  <td>79-81</td>
+                  <td>81-83</td>
+                  <td>83-85</td>
+                  <td>85-87</td>
+                  <td>87-89</td>
+                  <td>89-91</td>
+                  <td>91-93</td>
+                  <td>93-95</td>
+                  <td>95-97</td>
+                  <td>97-99</td>
+                </tr>
+                <tr>
+                  <td>63-67</td>
+                  <td>65</td>
+                  <td>77-79</td>
+                  <td>79-81</td>
+                  <td>81-83</td>
+                  <td>83-85</td>
+                  <td>85-87</td>
+                  <td>87-89</td>
+                  <td>89-91</td>
+                  <td>91-93</td>
+                  <td>93-95</td>
+                  <td>95-97</td>
+                  <td>97-99</td>
+                </tr>
+                <tr>
+                  <td>63-67</td>
+                  <td>65</td>
+                  <td>77-79</td>
+                  <td>79-81</td>
+                  <td>81-83</td>
+                  <td>83-85</td>
+                  <td>85-87</td>
+                  <td>87-89</td>
+                  <td>89-91</td>
+                  <td>91-93</td>
+                  <td>93-95</td>
+                  <td>95-97</td>
+                  <td>97-99</td>
+                </tr>
+                <tr>
+                  <td>63-67</td>
+                  <td>65</td>
+                  <td>77-79</td>
+                  <td>79-81</td>
+                  <td>81-83</td>
+                  <td>83-85</td>
+                  <td>85-87</td>
+                  <td>87-89</td>
+                  <td>89-91</td>
+                  <td>91-93</td>
+                  <td>93-95</td>
+                  <td>95-97</td>
+                  <td>97-99</td>
+                </tr>
+                <tr>
+                  <td>63-67</td>
+                  <td>65</td>
+                  <td>77-79</td>
+                  <td>79-81</td>
+                  <td>81-83</td>
+                  <td>83-85</td>
+                  <td>85-87</td>
+                  <td>87-89</td>
+                  <td>89-91</td>
+                  <td>91-93</td>
+                  <td>93-95</td>
+                  <td>95-97</td>
+                  <td>97-99</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="modal__footer modal__footer--table"><button class="btn  btn--white" type="button" data-dismiss="modal">Закрыть</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-log-in" tabindex="-1" role="dialog">
+      <div class="modal__dialog" role="document">
+        <div class="modal__content">
+          <div class="modal__header"><span class="close modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></span>
+            <div class="modal__title">Войти в профиль</div>
+          </div>
+          <div class="modal__body">
+            <p>У вас нет профиля?&emsp;<a class="modal__ankor" data-toggle="modal" data-target="#modal-sign-up" data-dismiss="modal" href="#">Зарегистрируйтесь</a></p>
+            <form name="logIn"><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="yourmail@mail.ru"/></span></label><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="password"/></span></label>
+              <div class="field-checkbox">
+                <div class="field-checkbox__input-wrap  field-checkbox__input-wrap--square"><label class="field-checkbox__name"><input class="field-checkbox__input" type="checkbox" name="rememberMe" /><span class="field-checkbox__name-text">Запомнить меня</span></label></div>
+              </div>
+            </form>
+          </div>
+          <div class="modal__footer modal__footer--two-buttons"><a class="btn  btn--accent" href="profile.html">Войти</a><a class="btn  btn--white" data-toggle="modal" data-target="#modal-remind-password" data-dismiss="modal" href="#">Забыл пароль</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-sign-up" tabindex="-1" role="dialog">
+      <div class="modal__dialog" role="document">
+        <div class="modal__content">
+          <div class="modal__header"><span class="close modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></span>
+            <div class="modal__title">Регистрация</div>
+          </div>
+          <div class="modal__body">
+            <p>Уже покупали у нас раньше?&emsp;<a class="modal__ankor" data-toggle="modal" data-target="#modal-log-in" data-dismiss="modal" href="#">Войти в профиль</a></p>
+            <form name="signUp">
+              <div class="modal__main-text">Ваш email</div><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="yourmail@mail.ru"/></span></label>
+              <div class="modal__main-text">Придумайте пароль</div><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="password"/></span></label>
+              <div class="modal__main-text">Повторите пароль</div><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="password"/></span></label>
+              <div class="modal__main-text">Как вас зовут?</div><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="Имя"/></span></label>
+            </form>
+          </div>
+          <div class="modal__footer"><a class="btn  btn--accent" href="profile.html">Зарегистрироваться</a>
+            <div class="field-checkbox">
+              <div class="field-checkbox__input-wrap  field-checkbox__input-wrap--square"><label class="field-checkbox__name"><input class="field-checkbox__input" type="checkbox" name="rememberMe" /><span class="field-checkbox__name-text">Запомнить меня</span></label></div>
+            </div>
+            <p class="modal__info-text">Нажимая кнопку «Продолжить», вы соглашаетесь с <a class='modal__ankor' href='#'>офертой</a> и <a class='modal__ankor' href='#'>политикой конфиденциальности</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-remind-password" tabindex="-1" role="dialog">
+      <div class="modal__dialog" role="document">
+        <div class="modal__content">
+          <div class="modal__header"><span class="close modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></span>
+            <div class="modal__title">Напомнить пароль</div>
+          </div>
+          <div class="modal__body">
+            <p>У вас нет профиля?<a class="modal__ankor" data-toggle="modal" data-target="#modal-sign-up" data-dismiss="modal" href="#"> Зарегистрируйтесь</a></p>
+            <form name="remindPassword">
+              <div class="modal__main-text">Укажите свою почту, чтобы мы выслали вам проверочный код</div><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="yourmail@mail.ru"/></span></label>
+            </form>
+          </div>
+          <div class="modal__footer modal__footer--two-buttons"><a class="btn  btn--accent" data-toggle="modal" data-target="#modal-remind-password-sucсess" data-dismiss="modal" href="#">Отправить</a><a class="btn  btn--white" data-toggle="modal" data-target="#modal-log-in" data-dismiss="modal" href="#">Войти</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-remind-password-sucсess" tabindex="-1" role="dialog">
+      <div class="modal__dialog" role="document">
+        <div class="modal__content">
+          <div class="modal__header"><span class="close modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></span>
+            <div class="modal__title">Пароль отправлен</div>
+          </div>
+          <div class="modal__body">
+            <div class="modal__main-text">Вам на почту пришло письмо с ссылкой на восстановление пароля. Удачи =)</div>
+          </div>
+          <div class="modal__footer"><button class="btn  btn--accent" data-dismiss="modal">Отлично</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="js/bundle.js"></script>
 
 </body>
