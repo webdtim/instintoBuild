@@ -18,7 +18,7 @@
   <meta name="theme-color" content="#000">
   <meta name="msapplication-navbutton-color" content="#000">
   <meta name="apple-mobile-web-app-status-bar-style" content="#000">
-  <title>Страница товара</title>
+  <title>Личный кабинет</title>
   <meta name="description" content="">
   <link rel="stylesheet" href="css/style.css">
   <script>
@@ -204,193 +204,40 @@ document.addEventListener("DOMContentLoaded", () => {
     <div class="content__container">
       <ul class="breadcrumbs" aria-label="Breadcrumb" role="navigation">
         <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
-        <li class="breadcrumbs__item"><span>корзина</span></li>
+        <li class="breadcrumbs__item"><a href="profile.html">Личный кабинет</a></li>
+        <li class="breadcrumbs__item"><span>Желаемое</span></li>
       </ul>
       <main class="content__main">
-        <div class="cart">
-          <div class="cart__select">
-            <div class="content-block__wrap-mob">
-              <div class="cart__title">
-                <h3>Ваша корзина<span> (3 товара)</span></h3>
-                <div class="cart__title-info"><span>Ваши товары зарезервированны на 60 минут</span></div>
-              </div>
-              <div class="cart__card-wrapper">
-                <div class="cart__card">
-                  <div class="cart__card-img"><img src="img/order-item-1.png" alt="название товара"></div>
-                  <div class="cart__card-info">
-                    <div class="cart__card-price"><span class="cart__card-price-actual">4 990₽</span><span class="old-price">5 783₽</span></div>
-                    <div class="cart__card-name">Black Silk Luxe Bra подушка еще что-то там и это испытание текста в 3 строки</div>
-                    <div class="cart__card-action">
-                      <form name="delete-cart">
-                        <div class="cart__card-delete">
-                          <div class="cart__card-close"></div><span class="cart__card-delete-text">Удалить из корзины</span>
-                        </div>
-                      </form>
-                      <form class="like"><label><input type="checkbox" name="like" /><svg width="21" height="20">
-                            <use xlink:href="img/sprite.svg#icon-favorites"></use>
-                          </svg></label></form>
-                    </div>
-                  </div>
-                </div>
-                <div class="cart__card-select">
-                  <div class="select"><select>
-                      <option value="12D" selected>12D</option>
-                      <option value="75C">75C</option>
-                      <option value="small">small</option>
-                      <option value="big">big</option>
-                      <option value="12D">12D</option>
-                    </select></div>
-                  <div class="select"><select>
-                      <option value="1" selected>1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                    </select></div>
-                </div>
-              </div>
-              <div class="cart__card-wrapper">
-                <div class="cart__card">
-                  <div class="cart__card-img"><img src="img/order-item-1.png" alt="название товара"></div>
-                  <div class="cart__card-info">
-                    <div class="cart__card-price"><span class="cart__card-price-actual">4 990₽</span><span class="old-price">5 783₽</span></div>
-                    <div class="cart__card-name">Black Silk Luxe Bra подушка</div>
-                    <div class="cart__card-action">
-                      <form name="delete-cart">
-                        <div class="cart__card-delete">
-                          <div class="cart__card-close"></div><span class="cart__card-delete-text">Удалить из корзины</span>
-                        </div>
-                      </form>
-                      <form class="like"><label><input type="checkbox" name="like" /><svg width="21" height="20">
-                            <use xlink:href="img/sprite.svg#icon-favorites"></use>
-                          </svg></label></form>
-                    </div>
-                  </div>
-                </div>
-                <div class="cart__card-select">
-                  <div class="select"><select>
-                      <option value="12D" selected>12D</option>
-                      <option value="75C">75C</option>
-                      <option value="small">small</option>
-                      <option value="big">big</option>
-                      <option value="12D">12D</option>
-                    </select></div>
-                  <div class="select"><select>
-                      <option value="1" selected>1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                    </select></div>
-                </div>
-              </div>
-              <div class="cart__card-wrapper">
-                <div class="cart__card">
-                  <div class="cart__card-img"><img src="img/order-item-1.png" alt="название товара"></div>
-                  <div class="cart__card-info">
-                    <div class="cart__card-price"><span class="cart__card-price-actual">4 990₽</span><span class="old-price">5 783₽</span></div>
-                    <div class="cart__card-name">Black Silk Luxe Bra подушка еще что-то там и это испытание текста в 3 строки</div>
-                    <div class="cart__card-action">
-                      <form name="delete-cart">
-                        <div class="cart__card-delete">
-                          <div class="cart__card-close"></div><span class="cart__card-delete-text">Удалить из корзины</span>
-                        </div>
-                      </form>
-                      <form class="like"><label><input type="checkbox" name="like" /><svg width="21" height="20">
-                            <use xlink:href="img/sprite.svg#icon-favorites"></use>
-                          </svg></label></form>
-                    </div>
-                  </div>
-                </div>
-                <div class="cart__card-select">
-                  <div class="select"><select>
-                      <option value="12D" selected>12D</option>
-                      <option value="75C">75C</option>
-                      <option value="small">small</option>
-                      <option value="big">big</option>
-                      <option value="12D">12D</option>
-                    </select></div>
-                  <div class="select"><select>
-                      <option value="1" selected>1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                    </select></div>
-                </div>
+        <div class="content__inner">
+          <div class="content-block  content-block--full-width">
+            <div class="content-block__inner">
+              <div class="content-block__text-wrapper">
+                <h2>Заказы</h2>
               </div>
             </div>
           </div>
-          <div class="cart__info">
-            <div class="your-order__wrap">
-              <div class="your-order">
-                <div class="your-order__inner">
-                  <div class="your-order__head"><span>Ваш заказ</span></div>
-                  <div class="your-order__price">
-                    <div class="your-order__price-big">4 000₽</div>
-                    <div class="your-order__count-wrap"><span>Ваши вещи - 4</span><span>4 000₽</span></div>
-                  </div>
-                  <div class="your-order__promo-code-wrap"><svg width="24px" height="24px">
-                      <use xlink:href="img/sprite.svg#icon-gift-grayscale"></use>
-                    </svg>
-                    <p>У вас есть промокод или подарочная карта? <br>Введи ее и получи скидку</p>
-                      <form class="form  form--promocode"><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="Промокод на скидку"/></span></label>
-                        <div class="field-actions"><button class="btn  btn--white">Активировать промокод</button></div>
-                      </form>
-                  </div>
-                </div>
-                <div class="your-order__inner"><a class="btn  btn--accent" href="checkout.html">Оформить заказ</a></div>
-              </div>
-            </div>
-            <div class="free-shipping">
-              <div class="free-shipping__text">
-                <div class="free-shipping__title">Бесплатная доставка</div>
-                <div class="free-shipping__description">Возьмите еще что-нибудь и мы доставим вам товар бесплатно!</div>
-                <div class="free-shipping__range">До бесплатной доставки: <span>520₽</span></div>
-              </div>
-              <div class="free-shipping__indicator">
-                <div class="free-shipping__indicator-fill">
-                  <div class="free-shipping__indicator-point"></div>
-                </div>
-              </div>
-            </div>
-            <div class="content-block  content-block--empty">
-              <div class="content-block__inner"></div>
-            </div>
-            <div class="cart__info-help">
-              <div class="info-block">
-                <div class="info-block__inner"><svg width="30px">
-                    <use xlink:href="img/sprite.svg#icon-shield"></use>
-                  </svg></div>
-                <div class="info-block__inner">
-                  <h3>Безопасность</h3>
-                </div>
-                <div class="info-block__inner">
-                  <p>Оплата производится через официальные сервисы, мы не получаем доступ к вашим картам или кошелькам</p>
-                </div>
-              </div>
-              <div class="info-block">
-                <div class="info-block__inner"><svg width="34px">
-                    <use xlink:href="img/sprite.svg#icon-mask"></use>
-                  </svg></div>
-                <div class="info-block__inner">
-                  <h3>Полная анонимность при доставке</h3>
-                </div>
-                <div class="info-block__inner">
-                  <p>Транспортная компания и курьеры не будут знать детали заказа.</p>
-                </div>
-              </div>
-              <div class="info-block">
-                <div class="info-block__inner"><svg>
-                    <use xlink:href="img/sprite.svg#icon-smile"></use>
-                  </svg></div>
-                <div class="info-block__inner">
-                  <h3>Нужна помощь?</h3>
-                </div>
-                <div class="info-block__inner">
-                  <p>У вас возникли вопросы?<br>Обратитесь в нашу службу поддержки клиентов по электронной почте</p>
+        </div>
+        <div class="content__inner">
+          <div class="content-block  content-block--full-width">
+            <div class="content-block__inner">
+              <div class="content-block__text-wrapper">
+                <div class="categories-list">
+                  <ul class="categories-list__wrap">
+                    <li><a href="profile.html">Кабинет</a></li>
+                    <li><a href="changeprofile.html">Мои данные</a></li>
+                    <li><a class="categories-list__active" href="my-order.html">Мои заказы</a></li>
+                    <li><a href="desired.html">Желаемое <span>(8)</span></a></li>
+                    <li><a href="#">Подарочный сертификат</a></li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="empty">
+          <div class="empty__text">Ой, тут пусто...<br>Посмотрите наш каталог, вам понравится</div>
+            <div class="empty__btn"><button class="btn  btn--main">Перейти в каталог</button></div>
+          </div>
       </main>
     </div>
   </div>
