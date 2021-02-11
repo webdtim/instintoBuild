@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html class="page  no-js" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="date=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="format-detection" content="email=no">
+  <meta content="notranslate" name="google">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#5bbad5">
+  <meta name="theme-color" content="#000">
+  <meta name="msapplication-navbutton-color" content="#000">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+  <title>Заказ оплачен</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+// Браузер и ОС
+document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+function cth(c){document.documentElement.classList.add(c)}
+'ontouchstart' in window?cth('touch'):cth('no-touch');
+if(typeof InstallTrigger!=='undefined')cth('firefox');
+if(/constructor/i.test(window.HTMLElement)||(function(p){return p.toString()==="[object SafariRemoteNotification]"})(!window['safari']||(typeof safari!=='undefined'&&safari.pushNotification)))cth('safari');
+if(/*@cc_on!@*/false||!!document.documentMode)cth('ie');
+if(!(/*@cc_on!@*/false||!!document.documentMode)&&!!window.StyleMedia)cth('edge');
+if(!!window.chrome&&(!!window.chrome.webstore||!!window.chrome.runtime))cth('chrome');
+if(~navigator.appVersion.indexOf("Win"))cth('windows');
+if(~navigator.appVersion.indexOf("Mac"))cth('osx');
+if(~['iPad','iPhone','iPod'].indexOf(navigator.platform))cth('ios');
+if(~navigator.appVersion.indexOf("Linux"))cth('linux');
+
+// Добавление 1vh (использование: height: 100vh; height: calc(var(--vh, 1vh) * 100);) для фикса 100vh на мобилках
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+window.addEventListener('resize', () => {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+
+// Добавление css-scroll-size для борьбы с проблемами скроллируемых блоков
+document.addEventListener("DOMContentLoaded", () => {
+  const outer = document.createElement('div');
+  const inner = document.createElement('div');
+  outer.style.overflow = 'scroll';
+  outer.classList.add('scrollbar');
+  document.body.appendChild(outer);
+  outer.appendChild(inner);
+  const scrollbarSize = outer.offsetWidth - inner.offsetWidth;
+  document.body.removeChild(outer);
+  document.documentElement.style.setProperty('--css-scroll-size', `${scrollbarSize}px`);
+});
+</script>
+</head>
+
+<body><noscript>У вас отключен JavaScript. Это пугает.</noscript>
+  <header class="page-header" role="banner">
+    <div class="page-header__inner--padding">
+      <div class="header-container">
+        <div class="burger__container"><a class="burger" role="button" data-target-id="header-catalog" data-target-class-toggle="header-catalog--open">
+            <div class="burger__inner">
+              <div class="burger__caption">Каталог</div>
+              <div class="burger__icon"></div>
+            </div>
+          </a></div>
+        <div class="header-container__line"></div>
+        <div class="header-container__inner">
+          <div class="header-nav-menu"><a class="header-nav-menu__inner" href="catalog.html">Косметика</a><a class="header-nav-menu__inner" href="catalog.html">Литература</a><a class="header-nav-menu__inner" href="blog.html"><svg width="12" height="12">
+                <use xlink:href="img/sprite.svg#icon-book"></use>
+              </svg><span>Интимный блог</span>
+              <div class="header-nav-menu__blog-age">18+</div></a></div><a class="logo  logo--header" href="index.html"><img class="logo__icon" src="img/logo-icon.svg" alt="Logo icon"><img class="logo__text" src="img/logo-text.svg" alt="logo text"></a>
+          <div class="header-icons"><a class="search" role="button" data-target-id="header-search" data-target-class-toggle="header-search--open">
+              <div class="search__inner"><svg class="search__icon">
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg></div>
+            </a><a class="header-icons__inner" data-toggle="modal" data-target="#modal-sign-up" href="#">
+              <div class="header-icons__text-sub-icon">Профиль</div><svg class="header-icons__icon header-icons__icon--hide" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-person"></use>
+              </svg>
+            </a><a class="header-icons__inner" href="desired.html">
+              <div class="header-icons__text-sub-icon">Желаемое<div id="count-favorites"><span>0</span></div>
+              </div><img class="header-icons__icon header-icons__icon--hide" src="img/logo-icon.svg" alt="Logo icon">
+            </a><a class="header-icons__inner" href="cart.html">
+              <div class="header-icons__text-sub-icon">Корзина<div id="count-basket"><span>0</span></div>
+              </div><svg class="header-icons__icon header-icons__icon--hide" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-basket"></use>
+              </svg>
+            </a></div>
+        </div>
+      </div>
+    </div>
+    <div class="page-header__inner">
+      <div class="header-search" id="header-search">
+        <div class="header-search__inner">
+          <div class="search-panel" id="search-panel">
+            <form>
+              <div class="search-panel__inner"><label class="field-text  field-text--material"><span class="field-text__input-wrap"><input class="field-text__input" type="text" value="" name="comment" placeholder="Введите слово для поиска"/></span></label><button class="btn  btn--blank btn--md btn--icon" type="submit">Искать<svg class="btn__icon">
+                    <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                  </svg></button></div>
+            </form>
+          </div>
+          <div class="search-panel-dropdown">
+            <div class="search-panel-dropdown__inner">
+              <div class="search-panel-dropdown__body"><a href="#">
+                  <div class="search-panel-dropdown-item">
+                    <div class="search-panel-dropdown-item__image"><img src="img/img1.png" alt="альт" /></div>
+                    <div class="search-panel-dropdown-item__text">
+                      <div class="search-panel-dropdown-item__title">Комплект белья obsessive</div>
+                      <div class="search-panel-dropdown-item__price">4 943 ₽</div>
+                    </div>
+                  </div>
+                </a><a href="#">
+                  <div class="search-panel-dropdown-item">
+                    <div class="search-panel-dropdown-item__image"><img src="img/img1.png" alt="альт" /></div>
+                    <div class="search-panel-dropdown-item__text">
+                      <div class="search-panel-dropdown-item__title">Комплект белья obsessive</div>
+                      <div class="search-panel-dropdown-item__price">4 943 ₽</div>
+                    </div>
+                  </div>
+                </a><a href="#">
+                  <div class="search-panel-dropdown-item">
+                    <div class="search-panel-dropdown-item__image"><img src="img/img1.png" alt="альт" /></div>
+                    <div class="search-panel-dropdown-item__text">
+                      <div class="search-panel-dropdown-item__title">Комплект белья obsessive</div>
+                      <div class="search-panel-dropdown-item__price">4 943 ₽</div>
+                    </div>
+                  </div>
+                </a></div>
+              <div class="search-panel-dropdown__footer">
+                <div class="search-panel-dropdown__footer-text">Всего <b>182</b> результата</div><a class="search-panel-dropdown__footer-link" href="#">Смотреть все</a><svg>
+                  <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-header__inner">
+      <div class="header-catalog" id="header-catalog">
+        <div class="header-catalog__inner">
+          <div class="header-catalog__wrap">
+            <div class="header-catalog__group">
+              <div class="header-catalog__group-title"><a href="#">Название группы категорий</a></div>
+              <div class="header-catalog__item-wrap">
+                <div class="header-catalog__item"><a href="#">Название категории</a></div>
+                <div class="header-catalog__item"><a href="#">Название категории</a></div>
+                <div class="header-catalog__item"><a href="#">Название категории</a></div>
+                <div class="header-catalog__item"><a href="#">Название категории</a></div>
+                <div class="header-catalog__item"><a href="#">Название категории</a></div>
+                <div class="header-catalog__item"><a href="#">Название категории</a></div>
+              </div>
+            </div>
+            <div class="header-catalog__group">
+              <div class="header-catalog__group-title"><a href="#">Название группы категорий</a></div>
+              <div class="header-catalog__item-wrap">
+                <div class="header-catalog__item"><a href="#">Название категории</a></div>
+                <div class="header-catalog__item"><a href="#">Название категории</a></div>
+                <div class="header-catalog__item"><a href="#">Название категории</a></div>
+                <div class="header-catalog__item"><a href="#">Название категории</a></div>
+                <div class="header-catalog__item"><a href="#">Название категории</a></div>
+                <div class="header-catalog__item"><a href="#">Название категории</a></div>
+              </div>
+            </div>
+            <div class="header-catalog__group">
+              <div class="header-catalog__group-title"><a href="#">Название группы категорий</a></div>
+              <div class="header-catalog__item-wrap">
+                <div class="header-catalog__item"><a href="#">Название категории</a></div>
+                <div class="header-catalog__item"><a href="#">Название категории</a></div>
+                <div class="header-catalog__item"><a href="#">Название категории</a></div>
+                <div class="header-catalog__item"><a href="#">Название категории</a></div>
+                <div class="header-catalog__item"><a href="#">Название категории</a></div>
+                <div class="header-catalog__item"><a href="#">Название категории</a></div>
+              </div>
+            </div>
+            <div class="header-catalog__group">
+              <div class="header-catalog__group-title"><a href="#">Название группы категорий</a></div>
+              <div class="header-catalog__item-wrap">
+                <div class="header-catalog__item"><a href="#">Название категории</a></div>
+                <div class="header-catalog__item"><a href="#">Название категории</a></div>
+                <div class="header-catalog__item"><a href="#">Название категории</a></div>
+                <div class="header-catalog__item"><a href="#">Название категории</a></div>
+                <div class="header-catalog__item"><a href="#">Название категории</a></div>
+                <div class="header-catalog__item"><a href="#">Название категории</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="header-catalog__news"><img src="img/preview-item-img.jpg" alt="актуальные новости">
+            <div class="header-catalog__news-title"><a>Как использование стимуляторов влияет на интимную жизнь?</a></div><a class="header-catalog__news-link" href="#">подробнее<svg width="16px" height="16px">
+                <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+              </svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="content">
+    <div class="content__container">
+      <div class="cart-success__container">
+        <div class="cart-success">
+          <div class="cart-success__caption">
+            <h2>Ваш заказ отправлен.</h2>
+          </div>
+          <div class="cart-success__caption">Мы отправим вам на почту трэк-номер для отслеживания статуса заказа.</div>
+          <div class="cart-success__info">
+            <div class="cart-success__text-wrap">
+              <div class="cart-success__text">
+                <div class="cart-success__text-inner"><span class="cart-success__text-info">Заказ №:</span><span class="cart-success__text-info">482750106</span></div>
+                <div class="cart-success__text-inner"><span class="cart-success__text-info">Дата Заказа:</span><span class="cart-success__text-info">06 март, 2020</span></div>
+              </div>
+              <div class="cart-success__text">
+                <div class="cart-success__text-inner"><span class="cart-success__text-info">Доставка:</span><span class="cart-success__text-info">Бесплатно</span></div>
+                <div class="cart-success__text-inner"><span class="cart-success__text-info">Итого:</span><span class="cart-success__text-info">10 930₽</span></div>
+              </div>
+            </div>
+            <div class="cart-success__btn-wrap">
+              <div class="cart-success__btn"><a class="btn  btn--accent" href="catalog.html">Вернуться в каталог</a></div>
+              <div class="cart-success__btn"><a class="btn  btn--white" href="#">Информация о возврате</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer" role="contentinfo">
+    <div class="content__container">
+      <div class="page-footer__inner page-footer__inner--carusel">
+        <div class="content-block  content-block--large">
+          <div class="content-block__inner">
+            <div class="content-block__wrap-mob"><a><img src="img/Rectangle 99.png" alt="discount"></a></div>
+          </div>
+        </div>
+        <div class="content-block  content-block--large">
+          <div class="content-block__inner">
+            <div class="content-block__wrap-mob">
+              <div class="subscribe">
+                <div class="subscribe__inner"><svg width="50px" height="35px">
+                    <use xlink:href="img/sprite.svg#icon-mail"></use>
+                  </svg>
+                  <h3 class="content-block__title">Подпишись на рассылку и получи скидку 10%</h3>
+                  <form class="form  form--subscribe"><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="Ваша почта"/></span></label>
+                    <div class="field-actions"><button class="btn  btn--default" type="submit">Подписаться</button></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer__inner page-footer__inner--border">
+        <div class="content-block  content-block--al-center">
+          <div class="content-block__inner">
+            <div class="content-block__wrap-mob"><a class="logo" href="index.html"><img class="logo__icon" src="img/logo-icon.svg" alt="Logo icon"><img class="logo__text" src="img/logo-text.svg" alt="logo text"></a></div>
+          </div>
+        </div>
+        <div class="content-block">
+          <div class="content-block__inner">
+            <div class="content-block__wrap-mob">
+              <div class="locality">
+                <div class="locality__inner"><svg>
+                    <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+                  </svg>
+                  <div class="locality__town"><span>Санкт-Петербург</span><svg>
+                      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                    </svg></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-block">
+          <div class="content-block__inner">
+            <div class="content-block__wrap-mob">
+              <div class="page-footer__btn"><a class="btn  btn--white btn--small-text" href="#">Статус заказа</a><a class="btn  btn--white btn--small-text" href="certificate.html">Подарочный сертификат</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="content-block  content-block--al-center">
+          <div class="content-block__inner">
+            <div class="content-block__wrap-mob">
+              <div class="page-footer__social"><a htef="#">
+                  <div class="page-footer__social-item"><svg>
+                      <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                    </svg></div>
+                </a><a htef="#">
+                  <div class="page-footer__social-item"><svg>
+                      <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                    </svg></div>
+                </a><a htef="#">
+                  <div class="page-footer__social-item"><svg>
+                      <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+                    </svg></div>
+                </a><a htef="#">
+                  <div class="page-footer__social-item"><svg>
+                      <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                    </svg></div>
+                </a><a htef="#">
+                  <div class="page-footer__social-item"><svg>
+                      <use xlink:href="img/sprite.svg#icon-vk"></use>
+                    </svg></div>
+                </a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer__inner">
+        <div class="content-block">
+          <div class="content-block__inner">
+            <div class="content-block__wrap-mob">
+              <div class="header-catalog__group">
+                <div class="header-catalog__group-title"><a>Наш магазин</a></div>
+                <div class="header-catalog__item-wrap">
+                  <div class="header-catalog__item"><a>О магазине</a></div>
+                  <div class="header-catalog__item"><a>Адреса магазинов</a></div>
+                  <div class="header-catalog__item"><a>Работай у нас</a></div>
+                  <div class="header-catalog__item"><a>FAQ</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-block">
+          <div class="content-block__inner">
+            <div class="content-block__wrap-mob">
+              <div class="header-catalog__group">
+                <div class="header-catalog__group-title"><a>Информация и помощь</a></div>
+                <div class="header-catalog__item-wrap">
+                  <div class="header-catalog__item"><a>Доставка и оплата</a></div>
+                  <div class="header-catalog__item"><a>Возврат и обмен</a></div>
+                  <div class="header-catalog__item"><a>Размерная сетка</a></div>
+                  <div class="header-catalog__item"><a>Скидки</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-block">
+          <div class="content-block__inner">
+            <div class="content-block__wrap-mob">
+              <div class="header-catalog__group">
+                <div class="header-catalog__group-title"><a>Юридическая информация</a></div>
+                <div class="header-catalog__item-wrap">
+                  <div class="header-catalog__item"><a>Политика конфиденциальности</a></div>
+                  <div class="header-catalog__item"><a>Политика cookie</a></div>
+                  <div class="header-catalog__item"><a>Условия использования сайта</a></div>
+                  <div class="header-catalog__item"><a>Условия продажи</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-block">
+          <div class="content-block__inner">
+            <div class="content-block__wrap-mob">
+              <div class="header-catalog__group">
+                <div class="header-catalog__group-title"><a>+7 988 396-55-55</a></div>
+                <div class="header-catalog__item-wrap">
+                  <div class="header-catalog__item"><a>Если у вас возникли вопросы, вы всегда можете связаться с нами.</a></div>
+                </div><a class="btn  btn--white btn--small-text" href="#">Написать в поддержку</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer__inner page-footer__inner--bg-gray">
+        <div class="content-block">
+          <div class="content-block__inner">
+            <div class="content-block__wrap-mob">© Instinto, 2021</div>
+          </div>
+        </div>
+        <div class="content-block">
+          <div class="content-block__inner">
+            <div class="content-block__wrap-mob">store@instinto.ru</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="modals">
+    <div class="modal" id="modal-size-table-anais" tabindex="-1" role="dialog">
+      <div class="modal__dialog" role="document">
+        <div class="modal__content">
+          <div class="modal__header"><span class="close modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></span>
+            <div class="modal__title">Anais</div>
+          </div>
+          <div class="modal__body modal__body--table">
+            <h5>Соответсвие размеров чаши</h5>
+            <div class="modal__table-container">
+              <table>
+                <tr>
+                  <th>Под грудью</th>
+                  <th>Размер</th>
+                  <th class="modal__th">Чаша <br> A</th>
+                  <th>Чаша <br> B</th>
+                  <th>Чаша <br> C</th>
+                  <th>Чаша <br> D</th>
+                  <th>Чаша <br> E</th>
+                  <th>Чаша <br> F</th>
+                  <th>Чаша <br> G</th>
+                  <th>Чаша <br> H</th>
+                  <th>Чаша <br> I</th>
+                  <th>Чаша <br> J</th>
+                  <th>Чаша <br> K</th>
+                </tr>
+                <tr>
+                  <td>63-67</td>
+                  <td>65</td>
+                  <td>77-79</td>
+                  <td>79-81</td>
+                  <td>81-83</td>
+                  <td>83-85</td>
+                  <td>85-87</td>
+                  <td>87-89</td>
+                  <td>89-91</td>
+                  <td>91-93</td>
+                  <td>93-95</td>
+                  <td>95-97</td>
+                  <td>97-99</td>
+                </tr>
+                <tr>
+                  <td>63-67</td>
+                  <td>65</td>
+                  <td>77-79</td>
+                  <td>79-81</td>
+                  <td>81-83</td>
+                  <td>83-85</td>
+                  <td>85-87</td>
+                  <td>87-89</td>
+                  <td>89-91</td>
+                  <td>91-93</td>
+                  <td>93-95</td>
+                  <td>95-97</td>
+                  <td>97-99</td>
+                </tr>
+                <tr>
+                  <td>63-67</td>
+                  <td>65</td>
+                  <td>77-79</td>
+                  <td>79-81</td>
+                  <td>81-83</td>
+                  <td>83-85</td>
+                  <td>85-87</td>
+                  <td>87-89</td>
+                  <td>89-91</td>
+                  <td>91-93</td>
+                  <td>93-95</td>
+                  <td>95-97</td>
+                  <td>97-99</td>
+                </tr>
+                <tr>
+                  <td>63-67</td>
+                  <td>65</td>
+                  <td>77-79</td>
+                  <td>79-81</td>
+                  <td>81-83</td>
+                  <td>83-85</td>
+                  <td>85-87</td>
+                  <td>87-89</td>
+                  <td>89-91</td>
+                  <td>91-93</td>
+                  <td>93-95</td>
+                  <td>95-97</td>
+                  <td>97-99</td>
+                </tr>
+                <tr>
+                  <td>63-67</td>
+                  <td>65</td>
+                  <td>77-79</td>
+                  <td>79-81</td>
+                  <td>81-83</td>
+                  <td>83-85</td>
+                  <td>85-87</td>
+                  <td>87-89</td>
+                  <td>89-91</td>
+                  <td>91-93</td>
+                  <td>93-95</td>
+                  <td>95-97</td>
+                  <td>97-99</td>
+                </tr>
+                <tr>
+                  <td>63-67</td>
+                  <td>65</td>
+                  <td>77-79</td>
+                  <td>79-81</td>
+                  <td>81-83</td>
+                  <td>83-85</td>
+                  <td>85-87</td>
+                  <td>87-89</td>
+                  <td>89-91</td>
+                  <td>91-93</td>
+                  <td>93-95</td>
+                  <td>95-97</td>
+                  <td>97-99</td>
+                </tr>
+                <tr>
+                  <td>63-67</td>
+                  <td>65</td>
+                  <td>77-79</td>
+                  <td>79-81</td>
+                  <td>81-83</td>
+                  <td>83-85</td>
+                  <td>85-87</td>
+                  <td>87-89</td>
+                  <td>89-91</td>
+                  <td>91-93</td>
+                  <td>93-95</td>
+                  <td>95-97</td>
+                  <td>97-99</td>
+                </tr>
+                <tr>
+                  <td>63-67</td>
+                  <td>65</td>
+                  <td>77-79</td>
+                  <td>79-81</td>
+                  <td>81-83</td>
+                  <td>83-85</td>
+                  <td>85-87</td>
+                  <td>87-89</td>
+                  <td>89-91</td>
+                  <td>91-93</td>
+                  <td>93-95</td>
+                  <td>95-97</td>
+                  <td>97-99</td>
+                </tr>
+                <tr>
+                  <td>63-67</td>
+                  <td>65</td>
+                  <td>77-79</td>
+                  <td>79-81</td>
+                  <td>81-83</td>
+                  <td>83-85</td>
+                  <td>85-87</td>
+                  <td>87-89</td>
+                  <td>89-91</td>
+                  <td>91-93</td>
+                  <td>93-95</td>
+                  <td>95-97</td>
+                  <td>97-99</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="modal__footer modal__footer--table"><button class="btn  btn--white" type="button" data-dismiss="modal">Закрыть</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-log-in" tabindex="-1" role="dialog">
+      <div class="modal__dialog" role="document">
+        <div class="modal__content">
+          <div class="modal__header"><span class="close modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></span>
+            <div class="modal__title">Войти в профиль</div>
+          </div>
+          <div class="modal__body">
+            <p>У вас нет профиля?&emsp;<a class="modal__ankor" data-toggle="modal" data-target="#modal-sign-up" data-dismiss="modal" href="#">Зарегистрируйтесь</a></p>
+            <form name="logIn"><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="yourmail@mail.ru"/></span></label><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="password"/></span></label>
+              <div class="field-checkbox">
+                <div class="field-checkbox__input-wrap  field-checkbox__input-wrap--square"><label class="field-checkbox__name"><input class="field-checkbox__input" type="checkbox" name="rememberMe" /><span class="field-checkbox__name-text">Запомнить меня</span></label></div>
+              </div>
+            </form>
+          </div>
+          <div class="modal__footer modal__footer--two-buttons"><a class="btn  btn--accent" href="profile.html">Войти</a><a class="btn  btn--white" data-toggle="modal" data-target="#modal-remind-password" data-dismiss="modal" href="#">Забыл пароль</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-sign-up" tabindex="-1" role="dialog">
+      <div class="modal__dialog" role="document">
+        <div class="modal__content">
+          <div class="modal__header"><span class="close modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></span>
+            <div class="modal__title">Регистрация</div>
+          </div>
+          <div class="modal__body">
+            <p>Уже покупали у нас раньше?&emsp;<a class="modal__ankor" data-toggle="modal" data-target="#modal-log-in" data-dismiss="modal" href="#">Войти в профиль</a></p>
+            <form name="signUp">
+              <div class="modal__main-text">Ваш email</div><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="yourmail@mail.ru"/></span></label>
+              <div class="modal__main-text">Придумайте пароль</div><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="password"/></span></label>
+              <div class="modal__main-text">Повторите пароль</div><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="password"/></span></label>
+              <div class="modal__main-text">Как вас зовут?</div><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="Имя"/></span></label>
+            </form>
+          </div>
+          <div class="modal__footer"><a class="btn  btn--accent" href="profile.html">Зарегистрироваться</a>
+            <div class="field-checkbox">
+              <div class="field-checkbox__input-wrap  field-checkbox__input-wrap--square"><label class="field-checkbox__name"><input class="field-checkbox__input" type="checkbox" name="rememberMe" /><span class="field-checkbox__name-text">Запомнить меня</span></label></div>
+            </div>
+            <p class="modal__info-text">Нажимая кнопку «Продолжить», вы соглашаетесь с <a class='modal__ankor' href='#'>офертой</a> и <a class='modal__ankor' href='#'>политикой конфиденциальности</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-remind-password" tabindex="-1" role="dialog">
+      <div class="modal__dialog" role="document">
+        <div class="modal__content">
+          <div class="modal__header"><span class="close modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></span>
+            <div class="modal__title">Напомнить пароль</div>
+          </div>
+          <div class="modal__body">
+            <p>У вас нет профиля?<a class="modal__ankor" data-toggle="modal" data-target="#modal-sign-up" data-dismiss="modal" href="#"> Зарегистрируйтесь</a></p>
+            <form name="remindPassword">
+              <div class="modal__main-text">Укажите свою почту, чтобы мы выслали вам проверочный код</div><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="yourmail@mail.ru"/></span></label>
+            </form>
+          </div>
+          <div class="modal__footer modal__footer--two-buttons"><a class="btn  btn--accent" data-toggle="modal" data-target="#modal-remind-password-sucсess" data-dismiss="modal" href="#">Отправить</a><a class="btn  btn--white" data-toggle="modal" data-target="#modal-log-in" data-dismiss="modal" href="#">Войти</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-remind-password-sucсess" tabindex="-1" role="dialog">
+      <div class="modal__dialog" role="document">
+        <div class="modal__content">
+          <div class="modal__header"><span class="close modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></span>
+            <div class="modal__title">Пароль отправлен</div>
+          </div>
+          <div class="modal__body">
+            <div class="modal__main-text">Вам на почту пришло письмо с ссылкой на восстановление пароля. Удачи =)</div>
+          </div>
+          <div class="modal__footer"><button class="btn  btn--accent" data-dismiss="modal">Отлично</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/bundle.js"></script>
+
+</body>
+
+</html>
