@@ -207,7 +207,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <li class="breadcrumbs__item"><span>Каталог</span></li>
       </ul>
       <main class="content__main">
-        <div class="content__inner">
+        <div class="content__inner content__inner--header">
           <div class="content-block  content-block--full-width">
             <div class="content-block__inner">
               <div class="content-block__text-wrapper">
@@ -216,8 +216,8 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
           </div>
         </div>
-        <div class="content__inner">
-          <div class="content-block  content-block--big">
+        <div class="content__inner content__inner--header">
+          <div class="content-block  content-block--big content-block--mob-hide">
             <div class="content-block__inner">
               <div class="content-block__text-wrapper">
                 <div class="categories-list">
@@ -237,101 +237,110 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
           <div class="content-block">
             <div class="content-block__inner">
-              <div class="content-block__text-wrapper"> <button class="btn  btn--white" id="catalogDropFilterButton">настроить фильтр</button></div>
+              <div class="content-block__text-wrapper"><button class="btn  btn--white" id="catalogDropFilterButton">настроить фильтр</button></div>
             </div>
           </div>
         </div>
         <form>
           <div class="content__inner content__inner--none-margin content__inner--close" id="catalogFilter">
-            <div class="drop-field__wrapper">
-              <div class="content-block">
-                <div class="content-block__inner">
-                  <div class="drop-field">
-                    <div class="drop-field__inner">
-                      <div class="drop-field__title">Размер</div>
-                      <div class="drop-field__item-wrapper">
-                        <div class="drop-field__item"><label class="drop-field__input-wrap"><input class="drop-field__input drop-field__input--none" name="chek0" type="checkbox"><span>Пункт меню 1</span></label></div>
-                        <div class="drop-field__item"><label class="drop-field__input-wrap"><input class="drop-field__input drop-field__input--none" name="chek0" type="checkbox"><span>Пункт меню 1</span></label></div>
-                        <div class="drop-field__item"><label class="drop-field__input-wrap"><input class="drop-field__input drop-field__input--none" name="chek0" type="checkbox"><span>Пункт меню 1</span></label></div>
-                        <div class="drop-field__item"><label class="drop-field__input-wrap"><input class="drop-field__input drop-field__input--none" name="chek0" type="checkbox"><span>Пункт меню 1</span></label></div>
-                        <div class="drop-field__item"><label class="drop-field__input-wrap"><input class="drop-field__input drop-field__input--none" name="chek0" type="checkbox"><span>Пункт меню 1</span></label></div>
+            <div class="drop-field">
+              <div class="drop-field__wrap-item">
+                <div class="drop-field__title">Цена</div>
+                <div class="drop-field__body-wrap">
+                  <div class="drop-field__body">
+                    <div class="drop-field__caption">Выберите диапазон</div>
+                    <div class="drop-field__range__wrap">
+                      <div class="drop-field__range-input"><label class="field-text" style="width: 100%;"><span class="field-text__input-wrap"><input class="field-text__input" id="range__field-1" type="number" min="0" max="10000"></span></label>
+                        <div class="drop-field__line"></div><label class="field-text" style="width: 100%;"><span class="field-text__input-wrap"><input class="field-text__input" id="range__field-2" type="number" min="0" max="10000"></span></label>
                       </div>
-                      <div class="drop-field__accept">
-                        <div class="field-actions"><button class="btn  btn--accent" type="submit">Применить</button></div>
+                      <div class="range">
+                        <div class="range__between"></div>
+                        <div class="range__btn range__btn-1"></div>
+                        <div class="range__btn range__btn-2"></div>
                       </div>
                     </div>
+                    <div class="drop-field__option-wrap">
+                      <div class="drop-field__option"><label class="drop-field__input-wrap"><input class="drop-field__input" name="chek0" type="checkbox"><span>до 1 000₽</span></label></div>
+                      <div class="drop-field__option"><label class="drop-field__input-wrap"><input class="drop-field__input" name="chek0" type="checkbox"><span>до 2 000₽</span></label></div>
+                      <div class="drop-field__option"><label class="drop-field__input-wrap"><input class="drop-field__input" name="chek0" type="checkbox"><span>до 3 000₽</span></label></div>
+                      <div class="drop-field__option"><label class="drop-field__input-wrap"><input class="drop-field__input" name="chek0" type="checkbox"><span>до 5 000₽</span></label></div>
+                      <div class="drop-field__option"><label class="drop-field__input-wrap"><input class="drop-field__input" name="chek0" type="checkbox"><span>до 10 000₽</span></label></div>
+                    </div>
                   </div>
+                  <div class="drop-field__accept"><button class="btn  btn--accent" type="submit">Применить</button></div>
                 </div>
               </div>
-              <div class="content-block">
-                <div class="content-block__inner">
-                  <div class="drop-field">
-                    <div class="drop-field__inner">
-                      <div class="drop-field__title">Размер</div>
-                      <div class="drop-field__item-wrapper">
-                        <div class="drop-field__item"><label class="drop-field__input-wrap"><input class="drop-field__input drop-field__input--none" name="chek0" type="checkbox"><span>Пункт меню 1</span></label></div>
-                        <div class="drop-field__item"><label class="drop-field__input-wrap"><input class="drop-field__input drop-field__input--none" name="chek0" type="checkbox"><span>Пункт меню 1</span></label></div>
-                        <div class="drop-field__item"><label class="drop-field__input-wrap"><input class="drop-field__input drop-field__input--none" name="chek0" type="checkbox"><span>Пункт меню 1</span></label></div>
-                        <div class="drop-field__item"><label class="drop-field__input-wrap"><input class="drop-field__input drop-field__input--none" name="chek0" type="checkbox"><span>Пункт меню 1</span></label></div>
-                        <div class="drop-field__item"><label class="drop-field__input-wrap"><input class="drop-field__input drop-field__input--none" name="chek0" type="checkbox"><span>Пункт меню 1</span></label></div>
-                      </div>
-                      <div class="drop-field__accept">
-                        <div class="field-actions"><button class="btn  btn--accent" type="submit">Применить</button></div>
-                      </div>
+              <div class="drop-field__wrap-item">
+                <div class="drop-field__title">Бренд</div>
+                <div class="drop-field__body-wrap">
+                  <div class="drop-field__body">
+                    <div class="drop-field__caption">Выберите интересующий вас бренд</div>
+                    <div class="drop-field__option-wrap">
+                      <div class="drop-field__option"><label class="drop-field__input-wrap"><input class="drop-field__input" name="chek0" type="checkbox"><span>Пункт меню 1</span></label></div>
+                      <div class="drop-field__option"><label class="drop-field__input-wrap"><input class="drop-field__input" name="chek0" type="checkbox"><span>Пункт меню 1</span></label></div>
+                      <div class="drop-field__option"><label class="drop-field__input-wrap"><input class="drop-field__input" name="chek0" type="checkbox"><span>Пункт меню 1</span></label></div>
+                      <div class="drop-field__option"><label class="drop-field__input-wrap"><input class="drop-field__input" name="chek0" type="checkbox"><span>Пункт меню 1</span></label></div>
+                      <div class="drop-field__option"><label class="drop-field__input-wrap"><input class="drop-field__input" name="chek0" type="checkbox"><span>Пункт меню 1</span></label></div>
+                      <div class="drop-field__option"><label class="drop-field__input-wrap"><input class="drop-field__input" name="chek0" type="checkbox"><span>Пункт меню 1</span></label></div>
+                      <div class="drop-field__option"><label class="drop-field__input-wrap"><input class="drop-field__input" name="chek0" type="checkbox"><span>Пункт меню 1</span></label></div>
                     </div>
                   </div>
+                  <div class="drop-field__accept"><button class="btn  btn--accent" type="submit">Применить</button></div>
                 </div>
               </div>
-              <div class="content-block">
-                <div class="content-block__inner">
-                  <div class="drop-field">
-                    <div class="drop-field__inner">
-                      <div class="drop-field__title">Размер</div>
-                      <div class="drop-field__item-wrapper">
-                        <div class="drop-field__item"><label class="drop-field__input-wrap"><input class="drop-field__input drop-field__input--none" name="chek0" type="checkbox"><span>Пункт меню 1</span></label></div>
-                        <div class="drop-field__item"><label class="drop-field__input-wrap"><input class="drop-field__input drop-field__input--none" name="chek0" type="checkbox"><span>Пункт меню 1</span></label></div>
-                        <div class="drop-field__item"><label class="drop-field__input-wrap"><input class="drop-field__input drop-field__input--none" name="chek0" type="checkbox"><span>Пункт меню 1</span></label></div>
-                        <div class="drop-field__item"><label class="drop-field__input-wrap"><input class="drop-field__input drop-field__input--none" name="chek0" type="checkbox"><span>Пункт меню 1</span></label></div>
-                        <div class="drop-field__item"><label class="drop-field__input-wrap"><input class="drop-field__input drop-field__input--none" name="chek0" type="checkbox"><span>Пункт меню 1</span></label></div>
+              <div class="drop-field__wrap-item">
+                <div class="drop-field__title">Цвет</div>
+                <div class="drop-field__body-wrap">
+                  <div class="drop-field__body">
+                    <div class="drop-field__caption">Какие цвета вас интересуют?</div>
+                    <div class="drop-field__option-wrap">
+                      <div class="drop-field__option"><label class="drop-field__input-wrap"><input class="drop-field__input" name="chek0" type="checkbox"><span>Красный</span></label>
+                        <div class="drop-field__color"></div>
                       </div>
-                      <div class="drop-field__accept">
-                        <div class="field-actions"><button class="btn  btn--accent" type="submit">Применить</button></div>
+                      <div class="drop-field__option"><label class="drop-field__input-wrap"><input class="drop-field__input" name="chek0" type="checkbox"><span>Белый</span></label>
+                        <div class="drop-field__color"></div>
+                      </div>
+                      <div class="drop-field__option"><label class="drop-field__input-wrap"><input class="drop-field__input" name="chek0" type="checkbox"><span>Черный</span></label>
+                        <div class="drop-field__color"></div>
+                      </div>
+                      <div class="drop-field__option"><label class="drop-field__input-wrap"><input class="drop-field__input" name="chek0" type="checkbox"><span>Синий</span></label>
+                        <div class="drop-field__color"></div>
+                      </div>
+                      <div class="drop-field__option"><label class="drop-field__input-wrap"><input class="drop-field__input" name="chek0" type="checkbox"><span>Желтый</span></label>
+                        <div class="drop-field__color"></div>
                       </div>
                     </div>
                   </div>
+                  <div class="drop-field__accept"><button class="btn  btn--accent" type="submit">Применить</button></div>
                 </div>
               </div>
-              <div class="content-block">
-                <div class="content-block__inner">
-                  <div class="drop-field">
-                    <div class="drop-field__inner">
-                      <div class="drop-field__title">Размер</div>
-                      <div class="drop-field__item-wrapper">
-                        <div class="drop-field__item"><label class="drop-field__input-wrap"><input class="drop-field__input drop-field__input--none" name="chek0" type="checkbox"><span>Пункт меню 1</span></label></div>
-                        <div class="drop-field__item"><label class="drop-field__input-wrap"><input class="drop-field__input drop-field__input--none" name="chek0" type="checkbox"><span>Пункт меню 1</span></label></div>
-                        <div class="drop-field__item"><label class="drop-field__input-wrap"><input class="drop-field__input drop-field__input--none" name="chek0" type="checkbox"><span>Пункт меню 1</span></label></div>
-                        <div class="drop-field__item"><label class="drop-field__input-wrap"><input class="drop-field__input drop-field__input--none" name="chek0" type="checkbox"><span>Пункт меню 1</span></label></div>
-                        <div class="drop-field__item"><label class="drop-field__input-wrap"><input class="drop-field__input drop-field__input--none" name="chek0" type="checkbox"><span>Пункт меню 1</span></label></div>
-                      </div>
-                      <div class="drop-field__accept">
-                        <div class="field-actions"><button class="btn  btn--accent" type="submit">Применить</button></div>
-                      </div>
+              <div class="drop-field__wrap-item">
+                <div class="drop-field__title">Размер</div>
+                <div class="drop-field__body-wrap">
+                  <div class="drop-field__body">
+                    <div class="drop-field__caption">Выберите интересующие вас размеры</div>
+                    <div class="drop-field__option-wrap drop-field__option-wrap--col2">
+                      <div class="drop-field__option"><label class="drop-field__input-wrap"><input class="drop-field__input" name="chek0" type="checkbox"><span>Sm</span></label></div>
+                      <div class="drop-field__option"><label class="drop-field__input-wrap"><input class="drop-field__input" name="chek0" type="checkbox"><span>Small</span></label></div>
+                      <div class="drop-field__option"><label class="drop-field__input-wrap"><input class="drop-field__input" name="chek0" type="checkbox"><span>EU 75C</span></label></div>
+                      <div class="drop-field__option"><label class="drop-field__input-wrap"><input class="drop-field__input" name="chek0" type="checkbox"><span>Длинный размер</span></label></div>
+                      <div class="drop-field__option"><label class="drop-field__input-wrap"><input class="drop-field__input" name="chek0" type="checkbox"><span>Oversize</span></label></div>
                     </div>
                   </div>
+                  <div class="drop-field__accept"><button class="btn  btn--white">Таблица размеров</button><button class="btn  btn--accent" type="submit">Применить</button></div>
                 </div>
               </div>
             </div>
             <div class="drop-field__all-accept">
-              <div class="content-block__wrap-mob">
-                <div class="field-actions"><button class="btn  btn--accent" type="submit">Применить</button></div>
-              </div>
+              <div class="drop-field__all-search">Нашлось:<span>4210 товаров</span></div><button class="btn  btn--accent" type="submit">Применить</button>
             </div>
           </div>
         </form>
-        <div class="content__inner">
+        <div class="content__inner content__inner--catalog">
           <div class="content-block">
             <div class="content-block__inner">
-              <div class="product-card"><a class="product-card__link" href="product.html"><img class="product-card__img" src="img/product-card-img (4).jpg" alt="альт">
+              <div class="product-card"><a class="product-card__link" href="product.html">
+                  <div class="product-card__img-wrap"><img class="product-card__img" src="img/product-card-img (4).jpg" alt="альт"></div>
                   <div class="product-card__text-wrap">
                     <div class="product-card__name">трусики</div>
                     <div class="product-card__price-wrap">
@@ -339,24 +348,38 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                   </div>
                   <div class="product-card__discount">-30%</div>
-                </a></div>
+                </a>
+                <div class="product-card__like">
+                  <form class="like__wrap"><svg class="like">
+                      <use xlink:href="img/sprite.svg#icon-favorites"></use>
+                    </svg></form>
+                </div>
+              </div>
             </div>
           </div>
           <div class="content-block">
             <div class="content-block__inner">
-              <div class="product-card"><a class="product-card__link" href="product.html"><img class="product-card__img" src="img/0a3bec6480158a55554e423fc3ac35ff.jpg" alt="альт">
+              <div class="product-card"><a class="product-card__link" href="product.html">
+                  <div class="product-card__img-wrap"><img class="product-card__img" src="img/0a3bec6480158a55554e423fc3ac35ff.jpg" alt="альт"></div>
                   <div class="product-card__text-wrap">
                     <div class="product-card__name">трусики с очень длинным названием в целые 2 или даже 3 строки. А это уже третья строка.</div>
                     <div class="product-card__price-wrap">
                       <div class="product-card__price">2210₽</div>
                     </div>
                   </div>
-                </a></div>
+                </a>
+                <div class="product-card__like">
+                  <form class="like__wrap"><svg class="like">
+                      <use xlink:href="img/sprite.svg#icon-favorites"></use>
+                    </svg></form>
+                </div>
+              </div>
             </div>
           </div>
           <div class="content-block">
             <div class="content-block__inner">
-              <div class="product-card"><a class="product-card__link" href="product.html"><img class="product-card__img" src="img/product-card-img (3).jpg" alt="альт">
+              <div class="product-card"><a class="product-card__link" href="product.html">
+                  <div class="product-card__img-wrap"><img class="product-card__img" src="img/product-card-img (3).jpg" alt="альт"></div>
                   <div class="product-card__text-wrap">
                     <div class="product-card__name">трусики со средним названием</div>
                     <div class="product-card__price-wrap">
@@ -364,12 +387,19 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                   </div>
                   <div class="product-card__discount">-30%</div>
-                </a></div>
+                </a>
+                <div class="product-card__like">
+                  <form class="like__wrap"><svg class="like">
+                      <use xlink:href="img/sprite.svg#icon-favorites"></use>
+                    </svg></form>
+                </div>
+              </div>
             </div>
           </div>
           <div class="content-block">
             <div class="content-block__inner">
-              <div class="product-card"><a class="product-card__link" href="product.html"><img class="product-card__img" src="img/product-card-img (6).jpg" alt="альт">
+              <div class="product-card"><a class="product-card__link" href="product.html">
+                  <div class="product-card__img-wrap"><img class="product-card__img" src="img/product-card-img (6).jpg" alt="альт"></div>
                   <div class="product-card__text-wrap">
                     <div class="product-card__name">трусики короткие</div>
                     <div class="product-card__price-wrap">
@@ -377,12 +407,19 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     <div class="product-card__discount">-30%</div>
                   </div>
-                </a></div>
+                </a>
+                <div class="product-card__like">
+                  <form class="like__wrap"><svg class="like">
+                      <use xlink:href="img/sprite.svg#icon-favorites"></use>
+                    </svg></form>
+                </div>
+              </div>
             </div>
           </div>
           <div class="content-block">
             <div class="content-block__inner">
-              <div class="product-card"><a class="product-card__link" href="product.html"><img class="product-card__img" src="img/00b8965ee26d0b44336c5e51b525cb45.jpg" alt="альт">
+              <div class="product-card"><a class="product-card__link" href="product.html">
+                  <div class="product-card__img-wrap"><img class="product-card__img" src="img/00b8965ee26d0b44336c5e51b525cb45.jpg" alt="альт"></div>
                   <div class="product-card__text-wrap">
                     <div class="product-card__name">трусики</div>
                     <div class="product-card__price-wrap">
@@ -390,12 +427,19 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                   </div>
                   <div class="product-card__discount">-30%</div>
-                </a></div>
+                </a>
+                <div class="product-card__like">
+                  <form class="like__wrap"><svg class="like">
+                      <use xlink:href="img/sprite.svg#icon-favorites"></use>
+                    </svg></form>
+                </div>
+              </div>
             </div>
           </div>
           <div class="content-block">
             <div class="content-block__inner">
-              <div class="product-card"><a class="product-card__link" href="product.html"><img class="product-card__img" src="img/product-card-img (4).jpg" alt="альт">
+              <div class="product-card"><a class="product-card__link" href="product.html">
+                  <div class="product-card__img-wrap"><img class="product-card__img" src="img/bb6c5dd7181ecb1279338bfae746e292.jpg" alt="альт"></div>
                   <div class="product-card__text-wrap">
                     <div class="product-card__name">трусики с очень длинным названием в целые 2 или даже 3 строки</div>
                     <div class="product-card__price-wrap">
@@ -403,12 +447,19 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                   </div>
                   <div class="product-card__discount">-30%</div>
-                </a></div>
+                </a>
+                <div class="product-card__like">
+                  <form class="like__wrap"><svg class="like">
+                      <use xlink:href="img/sprite.svg#icon-favorites"></use>
+                    </svg></form>
+                </div>
+              </div>
             </div>
           </div>
           <div class="content-block  content-block--large">
             <div class="content-block__inner">
-              <div class="product-card"><a class="product-card__link" href="product.html"><img class="product-card__img" src="img/product-card-img (2).jpg" alt="альт">
+              <div class="product-card"><a class="product-card__link" href="product.html">
+                  <div class="product-card__img-wrap"><img class="product-card__img" src="img/product-card-img (2).jpg" alt="альт"></div>
                   <div class="product-card__text-wrap">
                     <div class="product-card__name">трусики со средним названием</div>
                     <div class="product-card__price-wrap">
@@ -416,12 +467,19 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     <div class="product-card__discount">-30%</div>
                   </div>
-                </a></div>
+                </a>
+                <div class="product-card__like">
+                  <form class="like__wrap"><svg class="like">
+                      <use xlink:href="img/sprite.svg#icon-favorites"></use>
+                    </svg></form>
+                </div>
+              </div>
             </div>
           </div>
           <div class="content-block">
             <div class="content-block__inner">
-              <div class="product-card"><a class="product-card__link" href="product.html"><img class="product-card__img" src="img/00b8965ee26d0b44336c5e51b525cb45.jpg" alt="альт">
+              <div class="product-card"><a class="product-card__link" href="product.html">
+                  <div class="product-card__img-wrap"><img class="product-card__img" src="img/00b8965ee26d0b44336c5e51b525cb45.jpg" alt="альт"></div>
                   <div class="product-card__text-wrap">
                     <div class="product-card__name">трусики короткие</div>
                     <div class="product-card__price-wrap">
@@ -429,7 +487,211 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                   </div>
                   <div class="product-card__discount">-30%</div>
-                </a></div>
+                </a>
+                <div class="product-card__like">
+                  <form class="like__wrap"><svg class="like">
+                      <use xlink:href="img/sprite.svg#icon-favorites"></use>
+                    </svg></form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-block">
+            <div class="content-block__inner">
+              <div class="product-card"><a class="product-card__link" href="product.html">
+                  <div class="product-card__img-wrap"><img class="product-card__img" src="img/0a3bec6480158a55554e423fc3ac35ff.jpg" alt="альт"></div>
+                  <div class="product-card__text-wrap">
+                    <div class="product-card__name">трусики с очень длинным названием в целые 2 или даже 3 строки. А это уже третья строка.</div>
+                    <div class="product-card__price-wrap">
+                      <div class="product-card__price">2210₽</div>
+                    </div>
+                  </div>
+                </a>
+                <div class="product-card__like">
+                  <form class="like__wrap"><svg class="like">
+                      <use xlink:href="img/sprite.svg#icon-favorites"></use>
+                    </svg></form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-block">
+            <div class="content-block__inner">
+              <div class="product-card"><a class="product-card__link" href="product.html">
+                  <div class="product-card__img-wrap"><img class="product-card__img" src="img/product-card-img (3).jpg" alt="альт"></div>
+                  <div class="product-card__text-wrap">
+                    <div class="product-card__name">трусики со средним названием</div>
+                    <div class="product-card__price-wrap">
+                      <div class="product-card__actual-price">1720₽</div><span class="old-price">3300₽</span>
+                    </div>
+                  </div>
+                  <div class="product-card__discount">-30%</div>
+                </a>
+                <div class="product-card__like">
+                  <form class="like__wrap"><svg class="like">
+                      <use xlink:href="img/sprite.svg#icon-favorites"></use>
+                    </svg></form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-block">
+            <div class="content-block__inner">
+              <div class="product-card"><a class="product-card__link" href="product.html">
+                  <div class="product-card__img-wrap"><img class="product-card__img" src="img/product-card-img (6).jpg" alt="альт"></div>
+                  <div class="product-card__text-wrap">
+                    <div class="product-card__name">трусики короткие</div>
+                    <div class="product-card__price-wrap">
+                      <div class="product-card__actual-price">1320₽</div><span class="old-price">3300₽</span>
+                    </div>
+                    <div class="product-card__discount">-30%</div>
+                  </div>
+                </a>
+                <div class="product-card__like">
+                  <form class="like__wrap"><svg class="like">
+                      <use xlink:href="img/sprite.svg#icon-favorites"></use>
+                    </svg></form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-block">
+            <div class="content-block__inner">
+              <div class="product-card"><a class="product-card__link" href="product.html">
+                  <div class="product-card__img-wrap"><img class="product-card__img" src="img/00b8965ee26d0b44336c5e51b525cb45.jpg" alt="альт"></div>
+                  <div class="product-card__text-wrap">
+                    <div class="product-card__name">трусики</div>
+                    <div class="product-card__price-wrap">
+                      <div class="product-card__actual-price">2320₽</div><span class="old-price">3300₽</span>
+                    </div>
+                  </div>
+                  <div class="product-card__discount">-30%</div>
+                </a>
+                <div class="product-card__like">
+                  <form class="like__wrap"><svg class="like">
+                      <use xlink:href="img/sprite.svg#icon-favorites"></use>
+                    </svg></form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-block">
+            <div class="content-block__inner">
+              <div class="product-card"><a class="product-card__link" href="product.html">
+                  <div class="product-card__img-wrap"><img class="product-card__img" src="img/bb6c5dd7181ecb1279338bfae746e292.jpg" alt="альт"></div>
+                  <div class="product-card__text-wrap">
+                    <div class="product-card__name">трусики с очень длинным названием в целые 2 или даже 3 строки</div>
+                    <div class="product-card__price-wrap">
+                      <div class="product-card__actual-price">2210₽</div><span class="old-price">3300₽</span>
+                    </div>
+                  </div>
+                  <div class="product-card__discount">-30%</div>
+                </a>
+                <div class="product-card__like">
+                  <form class="like__wrap"><svg class="like">
+                      <use xlink:href="img/sprite.svg#icon-favorites"></use>
+                    </svg></form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-block">
+            <div class="content-block__inner">
+              <div class="product-card"><a class="product-card__link" href="product.html">
+                  <div class="product-card__img-wrap"><img class="product-card__img" src="img/0a3bec6480158a55554e423fc3ac35ff.jpg" alt="альт"></div>
+                  <div class="product-card__text-wrap">
+                    <div class="product-card__name">трусики с очень длинным названием в целые 2 или даже 3 строки. А это уже третья строка.</div>
+                    <div class="product-card__price-wrap">
+                      <div class="product-card__price">2210₽</div>
+                    </div>
+                  </div>
+                </a>
+                <div class="product-card__like">
+                  <form class="like__wrap"><svg class="like">
+                      <use xlink:href="img/sprite.svg#icon-favorites"></use>
+                    </svg></form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-block">
+            <div class="content-block__inner">
+              <div class="product-card"><a class="product-card__link" href="product.html">
+                  <div class="product-card__img-wrap"><img class="product-card__img" src="img/product-card-img (3).jpg" alt="альт"></div>
+                  <div class="product-card__text-wrap">
+                    <div class="product-card__name">трусики со средним названием</div>
+                    <div class="product-card__price-wrap">
+                      <div class="product-card__actual-price">1720₽</div><span class="old-price">3300₽</span>
+                    </div>
+                  </div>
+                  <div class="product-card__discount">-30%</div>
+                </a>
+                <div class="product-card__like">
+                  <form class="like__wrap"><svg class="like">
+                      <use xlink:href="img/sprite.svg#icon-favorites"></use>
+                    </svg></form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-block">
+            <div class="content-block__inner">
+              <div class="product-card"><a class="product-card__link" href="product.html">
+                  <div class="product-card__img-wrap"><img class="product-card__img" src="img/3739abcced147224fdc858ab9f4e1291.jpg" alt="альт"></div>
+                  <div class="product-card__text-wrap">
+                    <div class="product-card__name">трусики короткие</div>
+                    <div class="product-card__price-wrap">
+                      <div class="product-card__actual-price">1320₽</div><span class="old-price">3300₽</span>
+                    </div>
+                    <div class="product-card__discount">-30%</div>
+                  </div>
+                </a>
+                <div class="product-card__like">
+                  <form class="like__wrap"><svg class="like">
+                      <use xlink:href="img/sprite.svg#icon-favorites"></use>
+                    </svg></form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-block">
+            <div class="content-block__inner">
+              <div class="product-card"><a class="product-card__link" href="product.html">
+                  <div class="product-card__img-wrap"><img class="product-card__img" src="img/00b8965ee26d0b44336c5e51b525cb45.jpg" alt="альт"></div>
+                  <div class="product-card__text-wrap">
+                    <div class="product-card__name">трусики</div>
+                    <div class="product-card__price-wrap">
+                      <div class="product-card__actual-price">2320₽</div><span class="old-price">3300₽</span>
+                    </div>
+                  </div>
+                  <div class="product-card__discount">-30%</div>
+                </a>
+                <div class="product-card__like">
+                  <form class="like__wrap"><svg class="like">
+                      <use xlink:href="img/sprite.svg#icon-favorites"></use>
+                    </svg></form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-block">
+            <div class="content-block__inner">
+              <div class="product-card"><a class="product-card__link" href="product.html">
+                  <div class="product-card__img-wrap"><img class="product-card__img" src="img/7a044a1a8bef1634c98a5be13137aac0.jpg" alt="альт"></div>
+                  <div class="product-card__text-wrap">
+                    <div class="product-card__name">трусики с очень длинным названием в целые 2 или даже 3 строки</div>
+                    <div class="product-card__price-wrap">
+                      <div class="product-card__actual-price">2210₽</div><span class="old-price">3300₽</span>
+                    </div>
+                  </div>
+                  <div class="product-card__discount">-30%</div>
+                </a>
+                <div class="product-card__like">
+                  <form class="like__wrap"><svg class="like">
+                      <use xlink:href="img/sprite.svg#icon-favorites"></use>
+                    </svg></form>
+                </div>
+              </div>
             </div>
           </div>
         </div>
